@@ -1,9 +1,8 @@
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+import tailwindcss from '@tailwindcss/vite'
 
-const config = defineConfig({
-  plugins: [react(), tailwindcss()]
-});
-
-export default config;
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [svelte(), tailwindcss()],
+})
